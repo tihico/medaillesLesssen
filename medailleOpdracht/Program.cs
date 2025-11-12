@@ -10,6 +10,9 @@ namespace medailleOpdracht
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world!");
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
         }
     }
 }
