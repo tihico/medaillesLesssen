@@ -3,57 +3,44 @@ using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace medailleOpdracht
 {
+
     internal class Program
-    { 
+    {
+        public static DateTime Now { get; }
+
+
         static void Main(string[] args)
         {
-            double i = 0.000000000000000000000000000000000000000000000000001;
-            Console.WriteLine("Hello world!");
-            Console.WriteLine("What is your name?");
-            string input = Console.ReadLine();
-            Console.WriteLine(input);
-            if (input == "im 4 years old")
+            
+            bool admin = false;
+                Console.WriteLine("Als je een account wil maken schrijf een naam");
+            string userInput = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Nu type je password in");
+            string userInputPassword = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Nu typ in hoe oud je bent");
+            int userAge = Convert.ToInt32(Console.ReadLine());
+            if (userInput.ToLower() == "de ei man")
             {
-                Console.WriteLine("you are the youngest person EVER");
-
+                {
+                    admin = true;
+                }
             }
-            else
-            {
-                Console.WriteLine("wow your name is", Console.ReadLine());
+            User user1 = new User(userInput, userInputPassword, 25, 1, admin);
+            user1.Login();
             }
-            do
-            {
-                i = i + i;
-            }
-            while (true);
-            {
-                i = i + i;
-                Console.WriteLine("will this crash?");
-                Console.WriteLine(i);
-
-            }
-            Console.WriteLine("ja");
-            bool running = true;
-            int[] numbers = new int[] {
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
-
-            };
-            foreach(int numbers in numbers)
-            {
-                Console.WriteLine; a
-            }
+             
         }
+     
+
     }
+    
+
+
+
