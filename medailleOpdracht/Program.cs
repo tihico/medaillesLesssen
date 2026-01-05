@@ -22,9 +22,9 @@ namespace medailleOpdracht
             for (int i = 0; i <= 100; i++)
             
                 {
-                    int result = 0;
-                    result = rand.Next(1, 7);
-                    Console.WriteLine(result);
+                    int diceroll = 0;
+                    diceroll = rand.Next(1, 7);
+                    Console.WriteLine(diceroll);
                 }
                 string userInput = Console.ReadLine();
                 Console.Clear();
