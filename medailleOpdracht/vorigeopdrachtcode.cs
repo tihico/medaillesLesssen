@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace medailleOpdracht
-{ }; 
+{ };
 // Student student1 = new Student("Jameri", 25, "vladure", 0);
 
 
@@ -41,3 +41,10 @@ namespace medailleOpdracht
 
 // }
 //}
+//for (int i = 0; i <= 100; i++)
+//
+//{
+  //  int diceroll = 0;
+    //diceroll = rand.Next(1, 7);
+   // Console.WriteLine(diceroll);
+// }
