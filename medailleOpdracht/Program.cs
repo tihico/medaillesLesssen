@@ -16,10 +16,10 @@ namespace medailleOpdracht
 
         static void Main(string[] args)
         {
-            Opdracht1 opdracht = new Opdracht1();
+            Opdracht7 opdracht = new Opdracht7();
             opdracht.Start();
             /*
-            Random rand = new Random();
+            
             bool admin = false;
             Console.WriteLine("Als je een account wil maken schrijf een naam");
           
