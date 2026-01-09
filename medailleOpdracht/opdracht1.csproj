@@ -61,6 +61,7 @@
     <Compile Include="Car.cs" />
     <Compile Include="CharacterClass.cs" />
     <Compile Include="Opdracht1.cs" />
+    <Compile Include="Opdracht5.cs" />
     <Compile Include="Opdracht7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
