@@ -16,7 +16,7 @@ namespace medailleOpdracht
             Console.WriteLine("Regen");
             Console.WriteLine("Bewolkt");
             string userInput1 = (Console.ReadLine());
-            if (userInput1 == "Zonnig")
+            if (userInput1.ToLower() == "zonnig")
             {
                 Console.WriteLine("Wat temperatuur is het?");
                 int userInputTemperature = Convert.ToInt32(Console.ReadLine());
@@ -24,15 +24,33 @@ namespace medailleOpdracht
                 {
                     Console.WriteLine("Geniet van de lekkere zon zonder een jas aan");
                 }
-                else if (userInputTemperature >= 10) { Console.WriteLine("Je hebt wel echt een jas nodig, het is koud"); };
+                else if (userInputTemperature <= 19) { Console.WriteLine("Je hebt wel echt een jas nodig, het is koud"); }
+                
             }
-            if (userInput1 == "Regen")
+            if (userInput1.ToLower() == "regen")
             {
-                Console.WriteLine("Neem een paraplu mee!");
+                Console.WriteLine("Wat temperatuur is het?");
+                int userInputTemperature = Convert.ToInt32(Console.ReadLine());
+                if (userInputTemperature >= 20)
+                {
+                    Console.WriteLine("Warme regen valt! neem een paraplu mee! het kan nogsteeds fris voelen");
+                }
+                else if (userInputTemperature <= 19) { Console.WriteLine("Koude regen valt, het is heel koud! Jas en paraplu aan! "); }
+                
             }
-            if (userInput1 == "Bewolkt") { Console.WriteLine("Jammer, dan kan je de zon niet zien vaak"); }
+        
+    
+            if (userInput1.ToLower() == "bewolkt"){
+              Console.WriteLine("Wat temperatuur is het?");
+                int userInputTemperature = Convert.ToInt32(Console.ReadLine());
+                if (userInputTemperature >= 20)
+                {
+                    Console.WriteLine("Bewolkt, maar tenminste niet koud! hoeft niet echt een jas aan");
+                }
+                else if (userInputTemperature <= 19) { Console.WriteLine("Je hebt wel echt een jas nodig, het is fris"); };
+            }
         }
-
+}
 
     }
-}
+
