@@ -10,6 +10,7 @@ namespace medailleOpdracht
     {
         public void Start()
         {
+            // Klaar
             Console.WriteLine("typ in welke tafel je wilt");
 
             int userInput1 = Convert.ToInt32(Console.ReadLine());

@@ -15,10 +15,11 @@ namespace medailleOpdracht
         private int _hp;
         private int _level;
         
-        public Opdrachtweetniet(string name, int hp, float WalkSpeed, Boolean IsAlive)
+        public Opdrachtweetniet(string name, int hp, float WalkSpeed, Boolean IsAlive,int level)
         {
             _name = name;
             _hp = hp;
+            _level = level;
 
             Console.WriteLine($"hoi mijn naam is {_name} ");
         }

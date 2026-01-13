@@ -10,6 +10,7 @@ namespace medailleOpdracht
     {
         public void Start()
         {
+            // Klaar
             Console.WriteLine("Wat is u gebruikers naam?");
             string userInput = Console.ReadLine();
 

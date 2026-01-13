@@ -8,5 +8,10 @@ namespace medailleOpdracht
 {
     internal class Opdracht6
     {
+        public void Start()
+        {
+            Random rand = new Random();
+            int guessTheNumber = rand.Next(1, 11);
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace medailleOpdracht
     {
         public void Start()
         {
+            // Klaar
             // Woonkamer
             Console.WriteLine("Je bent nu in de woonkamer. Je hebt de keuze tussen 3 kamers om te zoeken voor je 19 dollar fortnite kaart");
             Console.WriteLine("Keuken");
@@ -109,7 +110,7 @@ namespace medailleOpdracht
                     }
                     else if (deTrap.ToLower() == "wc")
                     {
-                        Console.WriteLine("Je hebt je 19 dollar fortnite kaart in de WC gevonden! Gewonnen!");
+                        Console.WriteLine("Je hebt je 19 dollar fortnite kaart in de WC gevonden! Gewonnen! Ben je blij nu?");
                     }
                 }
             }

@@ -11,6 +11,7 @@ namespace medailleOpdracht
     {
         public void Start()
         {
+            // Klaar
             Console.WriteLine("Wat weer is het?");
             Console.WriteLine("Zonnig");
             Console.WriteLine("Regen");
