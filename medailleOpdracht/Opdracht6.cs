@@ -12,7 +12,7 @@ namespace medailleOpdracht
         public void Start()
         {
             Random rand = new Random();
-            int maxGetal = 11;
+            int maxGetal = Convert.ToInt32(Console.ReadLine()); 
             int minGetal = 1;
             int failedGuess = 0;
             bool guessWin = false;
