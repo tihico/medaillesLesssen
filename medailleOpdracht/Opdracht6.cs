@@ -17,7 +17,7 @@ namespace medailleOpdracht
             int failedGuess = 0;
             bool guessWin = false;
             int guessTheNumber = rand.Next(minGetal, maxGetal);
-            Console.WriteLine(guessTheNumber);
+            
             Console.WriteLine($"RAAD HET NUMMER! {minGetal}-{maxGetal-1}");
             
             while (true && !guessWin)
@@ -29,13 +29,13 @@ namespace medailleOpdracht
                     Console.WriteLine($"Dat nummer is hoger dan de maximale! raad nog een keer {failedGuess} Failed Guesses");
                    
                 }
-                 else if (userGuess > guessTheNumber && userGuess <= 10)
+                 else if (userGuess > guessTheNumber && userGuess < maxGetal)
                  {
                      failedGuess = failedGuess + 1;
                      Console.WriteLine($"GUESS LOWER!!!   {failedGuess} Failed Guesses");
                      
                  }
-                 else if (userGuess < guessTheNumber && userGuess > 0)
+                 else if (userGuess < guessTheNumber && userGuess > minGetal -1)
                  {
                      failedGuess = failedGuess + 1;
                      Console.WriteLine($"GUESS HIGHER!!! {failedGuess} Failed Guesses");
