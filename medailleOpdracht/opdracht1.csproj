@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Opdracht4.cs" />
+    <Compile Include="opdracht4new.cs" />
     <Compile Include="Opdracht6.cs" />
     <Compile Include="Opdrachtweetniet.cs" />
     <Compile Include="Opdracht1.cs" />
