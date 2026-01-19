@@ -62,6 +62,7 @@
     <Compile Include="Opdracht4.cs" />
     <Compile Include="opdracht4new.cs" />
     <Compile Include="Opdracht6.cs" />
+    <Compile Include="Opdracht8.cs" />
     <Compile Include="Opdrachtweetniet.cs" />
     <Compile Include="Opdracht1.cs" />
     <Compile Include="Opdracht2.cs" />
