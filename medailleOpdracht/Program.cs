@@ -16,7 +16,7 @@ namespace medailleOpdracht
 
         static void Main(string[] args)
         {
-            Opdracht8 opdracht = new Opdracht8();
+            Opdracht9 opdracht = new Opdracht9();
             opdracht.Start();
             /*
             
